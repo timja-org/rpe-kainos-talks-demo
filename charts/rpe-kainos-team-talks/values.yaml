@@ -1,0 +1,6 @@
+java:
+  applicationPort: 8080
+  image: 'hmctspublic.azurecr.io/rpe/kainos-team-talks:latest'
+  ingressHost: rpe-kainos-team-talks-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
+  aadIdentityName: rpe
+  environment:

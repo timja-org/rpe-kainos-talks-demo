@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  kainos-team-talks:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    image: hmctspublic.azurecr.io/rpe/kainos-team-talks
+    ports:
+      - $SERVER_PORT:$SERVER_PORT
